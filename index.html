@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bellissima Fashion | Discover Your Perfect Style</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .soft-gold-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        .btn-primary-hover:hover {
+            border-bottom: 2px solid #D4AF37;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#474836",
+                      "on-surface": "#1a1c1c",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#474746",
+                      "outline": "#747878",
+                      "tertiary-fixed": "#e4e4cc",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#f9f9f9",
+                      "tertiary-container": "#1b1d0e",
+                      "on-tertiary-container": "#848570",
+                      "inverse-surface": "#2f3131",
+                      "secondary": "#735c00",
+                      "secondary-container": "#fed65b",
+                      "on-secondary-container": "#745c00",
+                      "on-primary-fixed": "#1c1b1b",
+                      "on-surface-variant": "#444748",
+                      "secondary-fixed": "#ffe088",
+                      "on-error-container": "#93000a",
+                      "surface-container-low": "#f3f3f4",
+                      "primary": "#000000",
+                      "on-primary": "#ffffff",
+                      "on-background": "#1a1c1c",
+                      "on-tertiary-fixed": "#1b1d0e",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "secondary-fixed-dim": "#e9c349",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface-container-high": "#e8e8e8",
+                      "on-secondary-fixed": "#241a00",
+                      "primary-fixed": "#e5e2e1",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container": "#eeeeee",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#e2e2e2",
+                      "primary-container": "#1c1b1b",
+                      "error": "#ba1a1a",
+                      "background": "#f9f9f9",
+                      "surface-dim": "#dadada",
+                      "surface-tint": "#5f5e5e",
+                      "on-primary-container": "#858383",
+                      "on-error": "#ffffff",
+                      "tertiary": "#000000",
+                      "on-secondary-fixed-variant": "#574500",
+                      "surface": "#f9f9f9",
+                      "inverse-on-surface": "#f0f1f1",
+                      "outline-variant": "#c4c7c7",
+                      "tertiary-fixed-dim": "#c8c8b0"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "12px",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "button": ["Inter"],
+                      "display": ["Playfair Display"],
+                      "headline-sm": ["Playfair Display"],
+                      "label-caps": ["Inter"],
+                      "headline-md": ["Playfair Display"],
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-lg": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "button": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "display": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed font-body-md">
+<!-- 1. Header & Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/20 shadow-sm transition-all duration-200 ease-in-out">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto"><div class="flex items-center gap-12"><a class="font-headline-md text-headline-md text-primary tracking-tight" href="#">Bellissima Fashion</a><div class="hidden md:flex gap-8 items-center"><a class="font-label-caps text-label-caps text-secondary border-b-2 border-secondary pb-1 transition-colors duration-300" href="#">Home</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Products</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Categories</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">About Us</a></div></div><div class="flex-1 max-w-md mx-8 hidden lg:block"><div class="relative"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant !text-lg">search</span><input class="w-full bg-surface-container-low border-none rounded-full py-2 pl-10 pr-4 text-sm focus:ring-1 focus:ring-secondary" placeholder="Search collections..." type="text"/></div></div><div class="flex items-center gap-6"><div class="flex items-center gap-4 text-on-surface"><button class="material-symbols-outlined hover:text-secondary transition-colors lg:hidden" data-icon="search">search</button><button class="material-symbols-outlined hover:text-secondary transition-colors" data-icon="shopping_cart">shopping_cart</button></div><div class="flex items-center gap-3"><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary" href="#">Login</a><span class="h-4 w-px bg-outline-variant/30"></span><button class="font-label-caps text-label-caps px-5 py-2 bg-primary text-on-primary hover:bg-secondary transition-all duration-300 rounded-xl">Register</button></div></div></nav>
+</header>
+<!-- 2. Hero Section -->
+<section class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[20%] opacity-90" data-alt="A high-fashion editorial wide shot featuring two stylish models in minimalist, premium beige and black silk attire. They are posed elegantly against a clean, architectural concrete background with soft morning shadows. The aesthetic is sophisticated, reflecting quiet luxury and timeless fashion with high-end magazine lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTJIjw-OyRrcE0UEGUXkMnMbB5L6YJJCQpb1YUPKGP2W3TG344j7FveqkTEK3YR4LunXMIJDL-IGuMM6VY0Dbs8ReA1YlQyRY0froCjyw_SkZlcTMgPDy55Io713MdHXlSpBkxBeTWtj1SW7bK0wyxkg0BzK8l-ssVUDMrx24CpEGM3jWUFogprIeaDyC7PukpzMcxY_np2Oa5o2H3GI-mIAuofPfrsUtEj2w1vHhkLBGhTzVJsMasBIUoJtL4sFGQI73V4a73-c"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl space-y-8">
+<span class="font-label-caps text-label-caps tracking-widest text-secondary block">NEW COLLECTION 2024</span>
+<h1 class="font-display text-display text-primary leading-tight">Discover Your <br/><span class="italic text-secondary">Perfect Style</span> Today</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Explore the latest fashion collections with premium quality and affordable prices. Tailored for the modern individual who values elegance.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary font-button text-button px-10 py-4 rounded-xl btn-primary-hover transition-all duration-300">Shop Now</button>
+<button class="border border-primary text-primary font-button text-button px-10 py-4 rounded-xl hover:bg-surface-container transition-all duration-300">Explore Collection</button>
+</div>
+</div>
+</div>
+</section><section class="py-12 bg-white border-b border-outline-variant/10"><div class="px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8"><div class="flex flex-wrap justify-center gap-4"><button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-caps text-label-caps">All</button><button class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-caps text-label-caps">Women</button><button class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-caps text-label-caps">Men</button><button class="px-6 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors font-label-caps text-label-caps">Accessories</button></div><div class="w-full md:w-72 relative"><input class="w-full border-outline-variant rounded-xl px-4 py-2 text-sm focus:ring-secondary focus:border-secondary" placeholder="Filter products..." type="text"/><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant">tune</span></div></div></section>
+<!-- 3. Featured Categories -->
+<section class="py-24 bg-surface px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg">Curated Categories</h2>
+<div class="w-24 h-px bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category Card 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high soft-gold-shadow">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of high-end women's fashion featuring a linen blazer and gold jewelry. The lighting is soft and warm, emphasizing the high-quality fabric textures. Minimalist beige tones create a sophisticated, editorial aesthetic suitable for a premium fashion brand homepage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Sb0JzW6w7qZQkkcQcdetxcmTCaQeD7_hq2t1Ix5NbJEAq8T6PfcPU1FSDL6_-6k8hddWwLCCf9GDAtHKM1-P4gi5O6goQoVWX4Q6jzzATp4Br3BgMQ5PZBdv4hzY1zqE0UyiJWh44R-bDAt3TZgNHy6e0QXgd-cFxuXNL7K6fN44c0BJmT9OBP-7vrs4MfNX2CLypxqHJn6myl9MqNP2vh3aU6B_N3nYMDFwlp2jEnto0LZ1SaVI4LKlIXWZzZwKZhf5szK7PmM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-4">Women's Fashion</h3>
+<button class="w-fit font-label-caps text-label-caps border-b border-white/40 pb-1 hover:border-white transition-colors">View Products</button>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high soft-gold-shadow">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Editorial shot of a man wearing a charcoal wool coat and a cream turtleneck sweater. The setting is a minimalist urban environment with neutral colors. The lighting is crisp and modern, highlighting the garment's structure and premium tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsyjUul1UCbP0tFS8IqgxqX9ixKPaCtgF1daMH9EIfOeNJIWEeTHzZTDER6G2ISf7OguVAIXazFbLQejCLYsE86vXUvM7XlgOApknTdJu2HMZYN3KBUGdQsbA2e9fX2oaj104nTh42Ymi6F4_B9ZUxsp4hK5qwDz6mWgAUPxgCuIJYTVJLh_W0ve7q9zcu5ZXoO0m6J6nV1nb0qZ6i-CHOpvySkTv-NxoT1vRXK4JZmJYaBTY9A8sWH9WscMpaRgBBK1rAesagPEQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-4">Men's Fashion</h3>
+<button class="w-fit font-label-caps text-label-caps border-b border-white/40 pb-1 hover:border-white transition-colors">View Products</button>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high soft-gold-shadow">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A collection of elegant silk dresses hanging in a bright, minimalist boutique. The palette is dominated by champagne, soft gold, and ivory. Soft, diffused lighting creates a dreamlike, luxurious atmosphere that emphasizes the fluidity of the fabrics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3SsspeSHP0LObjDcRiA286y6t5ZjtCPrdGfLmMEKPs3yOCSoi-3MzTMT6HRXa6AAqVKG9T291LT-UBVV8_bOeND1DhHGil1zVRUuAzwFjjnQYNcEdBDPypP93mo7QZx8wvOd3HX-GwZv5YYugkWQvGzEBvbK-YaVirhw9rzK0LZD4tas6TwXd1pkzFCFnOCfNAvYFHULbeThmfXUvQfcy3y6kEnwd9yB_QXsW9xxMnn-d7U-uWrEJLBLk32fhab9Vt6CKk-oqHF8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-4">Dresses &amp; Outfits</h3>
+<button class="w-fit font-label-caps text-label-caps border-b border-white/40 pb-1 hover:border-white transition-colors">View Products</button>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-high soft-gold-shadow">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-end flat lay of fashion accessories including a leather handbag, tortoise shell sunglasses, and gold hoop earrings. The items are arranged artfully on a clean white marble surface. Bright, clean lighting highlights the metallic sheen and fine textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANW3FkO1_BGJ-zgNaBnLl5qFR1dV4FK2wc5OfZdJ0Esp9YVWDIR0jK0BFWK0kjYuSdnUSv-dIzibI-Frvh-pT-OcoOf7nMTMZyo5KejtA5SLEX-JmRZ72PCDuVQXL8MAf3Nb8fnbobiyFHWqssqejANmZoTXB2TXj-X9ODsw6UjaoEQkUAczOZg4klGJ5b-_6ukc92uW_nYND1LWrw761c_J5UhT5aGsuLvzzaJDKXWb_waBy1zoJZh3DXJk5ggT9tzYHzyMIwlko"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-sm text-headline-sm mb-4">Fashion Accessories</h3>
+<button class="w-fit font-label-caps text-label-caps border-b border-white/40 pb-1 hover:border-white transition-colors">View Products</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Best Selling Products -->
+<section class="py-24 bg-white px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-secondary">FAVORITES</span>
+<h2 class="font-headline-lg text-headline-lg">Best Selling Products</h2>
+</div>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors border-b border-outline" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-gutter gap-y-12"><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Premium Batik Shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9f47VNkhrzCZ3UqWu95fscw8aGjGu9VN-FUu62LePJnyK0kXmGXueNtkngX-8i81LZwEgp-2W59OXsHxKJxBfiZQHDkKZWKQVhMlFRVMGrC74JhplpIeIyco2FfdoXappuTVFNg_AdE2kbuDlW3TCrS7NwVvVxP03rOx5WrAfMFq-cFU_qd_2RWubzyhjVAbJuyDNlLrFqKMp0Y49uz2UzWVnyl6wnqLTQWi0U-iUnnqvt9zp8lFUvAmD9wr8_yamHMSmPSCjJk"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button><span class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest">NEW ARRIVAL</span></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Premium Batik Shirt</h3><p class="font-bold text-primary">$185.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Classic White Shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeY215c7kkznzU5qLB8Qw_RgVL_iwK1LlHVEhQh2W-A7rPnqPrAQEZEDZ9fl7wsFci_M9RuRiZneF23jtFOQG7E5I8-4AS8Oef3JThgmkQZqXNd8MMIGSXHquyZHptSoDi7L9c2v0nox2d8GHqg_74m9Yjo3O9vg6GCq0pQUbuUr3Gl_Nznke8vQUGVsmJ23RkLJD4ISVmCqEcVBnBVuKF-VKemmqCZskaKKqPDLluXOtkBcB9enYRAOiyRx8QYJ6hPki5Qw6Ps1Q"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button><span class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest">BESTSELLER</span></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Classic White Shirt</h3><p class="font-bold text-primary">$120.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Batik Pattern Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEHbU_NjPjZsas4OqhxHG76oFEI5_TFCmUwxcxolSeZiKr9Jvir2eGUjgjtz2LFVabkRzKvQUgwx2dfUOQMJEUPQSKFLnCAsxYrHGfFKa-ENMK4Pvg002RiLHmct0B3zmkbbF988_vpKuMRd2ltnnaQ_jQ-UwvQwlHnETLFdIHv_JL6aT_g--XPOCtEtsufQK0EbYYBPPxhZNttMXSxxyVSJE8k-WUG-wdkgmaWD7vCbGzUufRZUaLaDP5yi6kwhHza2W-ZLh7TpQ"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Batik Pattern Dress</h3><p class="font-bold text-primary">$210.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Modern Ikat Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbQbK7pXHtumhEKMVZtILsnYpoU636hsADft9o42wIx8CtzueyVgL8njzGgXieuvtIHDCX2C5H8Muq-CGz-8CxAFmbWFawBeTqojhOCvYpDfvKoi6NQYb7OTU53qig6bEgpqlLrUA3BLlcuS8IZbGT866n3xSgqGNQg3bfSHzqqL1CClP6TMfFpvzV3pJ5YCmc9MKALLqRL8OyAaDvQl8ee85dGWjvqSmjlyHz2YO_rCMgkERtmdVMeeMwStOLCG11GlN4kLdBIj8"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Modern Ikat Dress</h3><p class="font-bold text-primary">$195.00</p></div></div></div>
+</section>
+<!-- 5. Promotional Banner -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+<div class="relative rounded-3xl overflow-hidden bg-primary h-[500px] flex items-center">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover opacity-50 grayscale" data-alt="Atmospheric wide shot of a high-end fashion boutique interior with sleek furniture and minimalist decor. The lighting is low and sophisticated, emphasizing luxurious textures and a calm shopping environment. Subtle accents of gold and warm beige provide a premium feel consistent with Bellissima Fashion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA22-1dHucFaR9VVgCGJiMQgzFHhmxcyCBfukkRBm0X7baDXMIaYO4aJK71xm0OWJjejjJKefaJNk9BqL--FOEmqwgGoNVErYT-hO4yUamIOYP6NYiEUubuhOC-HbG0dAWKO3YfQ1Gf0Lw751Zo-KQfwGtW826GbwvE2N1Y8X03ftEx8pGmj3zxIguz2lEGWUenkfXqiA9IqDwkLocWay7i_Z9uNXB5Q-L5y07L3Ggv4nhoEDMM-XnkoICFdWRieGD99YDq3W4eHG4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-16 space-y-8 max-w-xl">
+<h2 class="font-display text-headline-lg text-white">Up to 50% Off <br/><span class="text-secondary italic">Seasonal Fashion Sale</span></h2>
+<p class="text-on-primary/70 font-body-lg">Elevate your wardrobe with our curated selection of premium pieces at exceptional prices. Offer available for a limited time.</p>
+<!-- Countdown Timer -->
+<div class="flex gap-4">
+<div class="flex flex-col items-center glass-card px-4 py-3 rounded-xl min-w-[80px]">
+<span class="text-white font-headline-sm" id="days">02</span>
+<span class="text-white/60 font-label-caps text-[10px]">DAYS</span>
+</div>
+<div class="flex flex-col items-center glass-card px-4 py-3 rounded-xl min-w-[80px]">
+<span class="text-white font-headline-sm" id="hours">14</span>
+<span class="text-white/60 font-label-caps text-[10px]">HOURS</span>
+</div>
+<div class="flex flex-col items-center glass-card px-4 py-3 rounded-xl min-w-[80px]">
+<span class="text-white font-headline-sm" id="minutes">38</span>
+<span class="text-white/60 font-label-caps text-[10px]">MINS</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary font-button text-button px-10 py-4 rounded-xl hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">Shop Now</button>
+</div>
+</div>
+</section>
+<!-- 6. Why Choose Us -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto soft-gold-shadow">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="verified">verified</span>
+</div>
+<h3 class="font-headline-sm !text-lg">Premium Quality</h3>
+<p class="text-on-surface-variant text-sm">Finest materials sourced globally for timeless durability.</p>
+</div>
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto soft-gold-shadow">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="sell">sell</span>
+</div>
+<h3 class="font-headline-sm !text-lg">Affordable Prices</h3>
+<p class="text-on-surface-variant text-sm">Luxury style accessible without the premium price tag.</p>
+</div>
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto soft-gold-shadow">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="font-headline-sm !text-lg">Fast Delivery</h3>
+<p class="text-on-surface-variant text-sm">Swift global shipping to your doorstep within days.</p>
+</div>
+<div class="text-center space-y-4">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto soft-gold-shadow">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline-sm !text-lg">Friendly Service</h3>
+<p class="text-on-surface-variant text-sm">Our expert stylists are here to assist your every need.</p>
+</div>
+</div>
+</section>
+<!-- 7. Testimonials -->
+<section class="py-24 bg-white px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<span class="font-label-caps text-label-caps text-secondary">VOICES OF BELLISSIMA</span>
+<h2 class="font-headline-lg text-headline-lg">Customer Love</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8"><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Premium Batik Shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9f47VNkhrzCZ3UqWu95fscw8aGjGu9VN-FUu62LePJnyK0kXmGXueNtkngX-8i81LZwEgp-2W59OXsHxKJxBfiZQHDkKZWKQVhMlFRVMGrC74JhplpIeIyco2FfdoXappuTVFNg_AdE2kbuDlW3TCrS7NwVvVxP03rOx5WrAfMFq-cFU_qd_2RWubzyhjVAbJuyDNlLrFqKMp0Y49uz2UzWVnyl6wnqLTQWi0U-iUnnqvt9zp8lFUvAmD9wr8_yamHMSmPSCjJk"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button><span class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest">NEW ARRIVAL</span></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Premium Batik Shirt</h3><p class="font-bold text-primary">$185.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Classic White Shirt" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeY215c7kkznzU5qLB8Qw_RgVL_iwK1LlHVEhQh2W-A7rPnqPrAQEZEDZ9fl7wsFci_M9RuRiZneF23jtFOQG7E5I8-4AS8Oef3JThgmkQZqXNd8MMIGSXHquyZHptSoDi7L9c2v0nox2d8GHqg_74m9Yjo3O9vg6GCq0pQUbuUr3Gl_Nznke8vQUGVsmJ23RkLJD4ISVmCqEcVBnBVuKF-VKemmqCZskaKKqPDLluXOtkBcB9enYRAOiyRx8QYJ6hPki5Qw6Ps1Q"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button><span class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest">BESTSELLER</span></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Classic White Shirt</h3><p class="font-bold text-primary">$120.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Batik Pattern Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEHbU_NjPjZsas4OqhxHG76oFEI5_TFCmUwxcxolSeZiKr9Jvir2eGUjgjtz2LFVabkRzKvQUgwx2dfUOQMJEUPQSKFLnCAsxYrHGfFKa-ENMK4Pvg002RiLHmct0B3zmkbbF988_vpKuMRd2ltnnaQ_jQ-UwvQwlHnETLFdIHv_JL6aT_g--XPOCtEtsufQK0EbYYBPPxhZNttMXSxxyVSJE8k-WUG-wdkgmaWD7vCbGzUufRZUaLaDP5yi6kwhHza2W-ZLh7TpQ"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Batik Pattern Dress</h3><p class="font-bold text-primary">$210.00</p></div></div><div class="group"><div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6 bg-surface-container"><img alt="Modern Ikat Dress" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbQbK7pXHtumhEKMVZtILsnYpoU636hsADft9o42wIx8CtzueyVgL8njzGgXieuvtIHDCX2C5H8Muq-CGz-8CxAFmbWFawBeTqojhOCvYpDfvKoi6NQYb7OTU53qig6bEgpqlLrUA3BLlcuS8IZbGT866n3xSgqGNQg3bfSHzqqL1CClP6TMfFpvzV3pJ5YCmc9MKALLqRL8OyAaDvQl8ee85dGWjvqSmjlyHz2YO_rCMgkERtmdVMeeMwStOLCG11GlN4kLdBIj8"/><button class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur text-primary font-button text-button py-3 rounded-xl opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">Add to Cart</button></div><div class="space-y-1"><h3 class="font-body-md text-primary group-hover:text-secondary transition-colors">Modern Ikat Dress</h3><p class="font-bold text-primary">$195.00</p></div></div></div>
+</section>
+<!-- 8. Newsletter -->
+<section class="py-24 bg-surface-container-high relative overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10 text-center space-y-8">
+<div class="max-w-2xl mx-auto space-y-4">
+<h2 class="font-display text-headline-lg">Join the Bellissima Circle</h2>
+<p class="text-on-surface-variant">Subscribe for exclusive early access to new collections, seasonal sales, and fashion inspiration.</p>
+</div>
+<form class="max-w-md mx-auto flex gap-4" onsubmit="event.preventDefault();">
+<input class="flex-1 bg-white border-outline-variant rounded-xl px-6 py-4 focus:ring-secondary focus:border-secondary transition-all outline-none" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary font-button text-button px-8 py-4 rounded-xl btn-primary-hover">Subscribe</button>
+</form>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">NO SPAM, JUST PURE ELEGANCE.</p>
+</div>
+</section>
+<!-- 9. Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<h2 class="font-headline-sm text-headline-sm text-primary dark:text-on-surface">Bellissima Fashion</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">Timeless fashion for the modern individual. Experience luxury quality and sophisticated style in every piece.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary cursor-pointer" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer" data-icon="instagram">camera_alt</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer" data-icon="twitter">1k</span>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-label-caps text-primary font-bold">Quick Links</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">New Arrivals</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Best Sellers</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Women's Collection</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Men's Collection</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-label-caps text-primary font-bold">Customer Care</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-caps text-label-caps text-primary font-bold">Newsletter</h4>
+<p class="text-on-surface-variant text-sm">Stay updated on our latest news and offers.</p>
+<div class="flex">
+<input class="w-full bg-surface-container px-4 py-2 border-none rounded-l-lg text-sm" placeholder="Email" type="text"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-lg"><span class="material-symbols-outlined !text-sm">send</span></button>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm font-body-md">© 2024 Bellissima Fashion. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="payments">payments</span>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll implementation for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple visual countdown logic (visual only for this UI template)
+        setInterval(() => {
+            const now = new Date();
+            // Just some ticking numbers for the demo
+            document.getElementById('minutes').innerText = String(now.getMinutes()).padStart(2, '0');
+            // The rest are static in this simple UI demo to preserve visual integrity
+        }, 1000);
+
+        // Header transparency scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('py-4', 'shadow-sm');
+            } else {
+                header.classList.add('py-4', 'shadow-sm');
+                header.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>
